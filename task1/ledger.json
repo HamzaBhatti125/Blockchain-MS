@@ -1,0 +1,14 @@
+[
+  {
+    "prevHash": "GENESIS",
+    "hash": "776e68f4279ffc469e8da3ec44a34fc3b4d971288b27b344557e9438a09c9f3b",
+    "key": "user1",
+    "value": "balance: 500"
+  },
+  {
+    "prevHash": "776e68f4279ffc469e8da3ec44a34fc3b4d971288b27b344557e9438a09c9f3b",
+    "hash": "71ef06f9937a005d5bb12628a457057112e6e4b061b4108378b41ddd6b5a8b42",
+    "key": "user2",
+    "value": "balance: 1000"
+  }
+]
