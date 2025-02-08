@@ -1,0 +1,13 @@
+{
+  "clients": {
+    "abc123": true,
+    "xyz789": true
+  },
+  "messages": [
+    {
+      "clientHash": "abc123",
+      "message": "Hello, servers!",
+      "timestamp": "2025-02-08T11:50:42.598Z"
+    }
+  ]
+}
