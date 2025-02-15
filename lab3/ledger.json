@@ -1,0 +1,19 @@
+{
+    "clients": [
+        {
+            "clientId": "12345"
+        },
+        {
+            "clientId": "67890"
+        }
+    ],
+    "transactions": [
+        {
+            "server": 5002,
+            "transaction": "Hello",
+            "nonce": 9172,
+            "hash": "00001f2e9f8f74117b4178eb04b368c807f906ae2a07bece562266cbc9adff3c",
+            "timestamp": "2025-02-15 17:43:44"
+        }
+    ]
+}
