@@ -1,0 +1,8 @@
+requests
+web3
+cryptography
+joblib
+py-solc-x
+scikit-learn
+cohere
+pandas

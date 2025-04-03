@@ -1,0 +1,36 @@
+# Step 1: Create a new Multichain blockchain named "mychain"
+multichain-util create mychain
+
+# Step 2: Start the blockchain daemon
+multichaind mychain -daemon
+
+# Step 3: Connect to the blockchain
+multichain-cli mychain
+
+# Step 4: Get blockchain info
+multichain-cli mychain getinfo
+
+# Step 5: List all wallet transactions
+multichain-cli mychain listwallettransactions
+
+# Step 6: Get raw transaction data 
+multichain-cli mychain getrawtransaction 27c3c0dcfc5c6edd30100f1be02b4abe17ee980e3e80917fd2e14a55fa7e25b3 1
+
+# Step 7: Get all wallet addresses
+multichain-cli mychain getaddresses
+
+# Step 8: Generate a new address for the wallet
+multichain-cli mychain getnewaddress
+
+# Step 10: Issue a new coin 
+multichain-cli mychain issue 1XXu8qbgUEARLzhSiqtEkbEBQ3bQk3ATYAdaLY "Hamza Coin" 1000 0.01
+
+# Step 11: Grant permission to the burn address (so it can receive coins)
+multichain-cli mychain grant 1XXXXXXX3xXXXXXXyGXXXXXXXAXXXXXXYVgaEE receive
+
+# Step 12: Send coins to the burn address 
+multichain-cli mychain sendasset 1XXXXXXX3xXXXXXXyGXXXXXXXAXXXXXXYVgaEE "Hamza Coin" 1000
+
+# Step 12: Send coins to the burn address again to verify that insufficient balance
+multichain-cli mychain sendasset 1XXXXXXX3xXXXXXXyGXXXXXXXAXXXXXXYVgaEE "Hamza Coin" 1000
+

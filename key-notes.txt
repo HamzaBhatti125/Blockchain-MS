@@ -1,0 +1,33 @@
+agr nonce ni milta tou blockchain ka faida ni h
+
+jb tk 6 confimartions ni ayengi woh block chain me add ni hga 
+
+1. all servers are thread based nature
+2. all servers share common ledger
+3. all servers initiate pow code, if alice initiate a transaction
+4. all servers will get delay (common) 
+5. jo b node selected hgi uske end me selected, start-time, end-time, computational time likha hga
+6. start time same hga saari nodes ka
+
+Green Address payment:
+banks are associated with blockchain not the users so banks pehly hi user ko pese dedega aur blockchain me phr record add krdega jo after confirmation bank k address se deduct hjaega after 6 confimations. 
+
+we see coin base transactions in genesis block
+
+public blockchain -> jo miners bethe hue htey hain
+pvt blockchain -> hum khud select krte hain miners
+combination of both chains -> 
+
+mid topics
+chapter 1
+chapter 2
+chapter 3 (half)
+
+
+commands
+getinfo
+listwallettransactions
+getrawtransaction <tx_id> 1
+getaddresses
+issue <wallet-address> <coin_name> <quantity> 0.01 (decimals)
+

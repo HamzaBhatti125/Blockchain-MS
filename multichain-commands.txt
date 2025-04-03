@@ -1,0 +1,30 @@
+# Task 1: Creating a MultiChain Instance
+multichain-util create chain1  # Creates a new blockchain named 'chain1'
+
+# Task 2: Starting the MultiChain node\multichaind chain1 -daemon  # Starts the blockchain in daemon mode
+
+# Task 3: Listing Wallet Transactions
+multichain-cli chain1 listwallettransactions  # Lists transactions in the wallet
+
+# Task 4: Fetching Blockchain Parameters
+multichain-cli chain1 getblockchainparams  # Retrieves blockchain parameters
+
+# Task 5: Checking Peer Connections
+multichain-cli chain1 getpeerinfo  # Displays connected peers' information
+
+# Task 6: Creating and Managing Assets
+multichain-cli chain1 createasset asset1 1000 0.01  # Creates asset 'asset1' with 1000 supply and 0.01 unit size
+multichain-cli chain1 listassets  # Lists all created assets
+
+# Task 7: Fetching Raw Transactions
+multichain-cli chain1 getrawtransaction "<txid>" 1  # Retrieves raw transaction details
+
+# Task 8: Generating a New Address
+multichain-cli chain1 getnewaddress  # Generates a new blockchain address
+
+# Task 9: Listing All Addresses
+multichain-cli chain1 listaddresses  # Lists all addresses associated with the node
+
+# Task 10: Displaying Miners in MultiChain
+multichain-cli chain1 listpermissions mine  # Lists addresses with mining permissions
+
