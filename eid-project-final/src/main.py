@@ -9,10 +9,13 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from fare_prediction import predict_fare
 from openai_api.prompt_generator import get_generated_contract
 from blockchain.smart_contract import deploy_contract
+from blockchain.replicate_stream import replicate_contract_to_other_nodes
 from train_model import train_and_save_model
 from blockchain.multichain_api import MultichainAPI
 from config.config import MULTICHAIN_RPC_URL, MULTICHAIN_RPC_USER, MULTICHAIN_RPC_PASSWORD
 from smart_contract_deployment import save_contract_to_file, load_contract_from_file
+
+
 
 def main():
     train_and_save_model()
@@ -68,6 +71,9 @@ def main():
 
     subscription = multichain_api.list_stream_items("contract-stream", deployed_contract_address)
     print(f"Subscription result: {subscription}")
+
+    replicate_contract_to_other_nodes("contract-stream", deployed_contract_address, message_hex)
+
 
 if __name__ == "__main__":
     main()

@@ -3,7 +3,6 @@ import os
 import time
 import cohere
 # from openai import OpenAI, APIError, RateLimitError
-from config.config import OPENAI_API_KEY
 
 load_dotenv()
 
