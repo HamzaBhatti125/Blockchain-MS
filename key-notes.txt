@@ -31,3 +31,5 @@ getrawtransaction <tx_id> 1
 getaddresses
 issue <wallet-address> <coin_name> <quantity> 0.01 (decimals)
 
+vaccination notification in blockchain to avoid the specific vaccine detail so instead if giving all info just prompt the message to user regarding vaccination instead of revealing the vaccine information to avoid the curruption
+
